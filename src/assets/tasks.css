@@ -1,0 +1,33 @@
+.task-div {
+    background-color: #181818;
+    border: 1px solid #dddddd1f;
+    padding: 10px;
+    margin: 12px 0px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.task-div ion-icon {
+    padding: 9px 9px;
+    background-color: #181818;
+    border: 1px solid #7f22fb;
+    border-radius: 5px;
+    font-size: 18px;
+    color: #10dc60;
+}
+
+.task-div h3 {
+    width: 75%;
+    font-size: 14px;
+}
+
+.message {
+    padding: 140px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 22px;
+    color: #eeeeee70;
+}

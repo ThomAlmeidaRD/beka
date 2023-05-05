@@ -1,0 +1,23 @@
+nav img {
+    width: 48px;
+    height: 50px;
+    border-radius: 50%;
+    margin: 5px;
+    margin-right: 12px;
+    border: 2px solid #7f22fb;
+}
+
+nav b {
+    font-size: 18px;
+}
+
+nav {
+    padding: 14px 10px;
+    display: flex;
+    align-items: center;
+}
+
+#curso {
+    color: #727272;
+    font-size: 14px;
+}

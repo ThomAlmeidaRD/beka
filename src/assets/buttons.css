@@ -1,0 +1,23 @@
+#btn-create-task {
+    padding: 15px;
+    position: absolute;
+    top: 20px;
+    right: 10px;
+    width: 20%;
+    border-radius: 6px;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    background-color: #7f22fb;
+    box-shadow: 0px 0px 11px #000;
+    color: #FFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-field {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
