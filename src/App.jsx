@@ -36,7 +36,9 @@ body.onload = function () {
       newItem_Title.innerText = tarefas[i].title
       newItem_span.innerText = tarefas[i].emoji
       newItem_ID.innerText = tarefas[i].id
+
       newItem_Div.classList.add('task-div')
+      newItem_ID.classList.add('task-id')
 
       newItem_Div.appendChild(newItem_span)
       newItem_Div.appendChild(newItem_Title)
@@ -116,6 +118,8 @@ function createTask() {
 
 
   newItem_Div.classList.add('task-div')
+  newItem_ID.classList.add('task-id')
+  
   if (select_color.value == 1) {
     newItem_span.innerText = color_task[0]
   } else if (select_color.value == 2) {

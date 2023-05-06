@@ -23,6 +23,10 @@
     font-size: 14px;
 }
 
+.task-id {
+    display: none;
+}
+
 .message {
     padding: 140px 0px;
     display: flex;
