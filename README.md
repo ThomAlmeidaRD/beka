@@ -8,9 +8,9 @@ O aplicativo utiliza o ReactJS para criar uma interface amigável e dinâmica, p
 
 ## Tecnologias Utilizadas
 <ul>
-<li>ReactJS</li>
-<li>Dexie.js</li>
-<li>Vercel</li>
+<li> <img align="center" alt="Rafa-HTML" height="20" width="30" src="https://simpleicons.vercel.app/react/fff"> <b>React</b> </li>
+<li> <img align="center" alt="Rafa-HTML" height="20" width="30" src="https://dexie.org/assets/images/dexie-logo-icon.svg"> <b>Dexie.js</b> </li>
+<li> <img align="center" alt="Rafa-HTML" height="20" width="30" src="https://simpleicons.vercel.app/vercel/fff"> <b>Vercel</b> </li>
 </ul>
 
 ## Hospedagem
