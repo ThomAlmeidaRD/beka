@@ -84,7 +84,7 @@ function clearDB() {
 setInterval(function () {
   var count = document.querySelector('#count')
   var ul = document.querySelector('ul')
-  //count.innerText = ul.childNodes.length - 1
+  count.innerText = ul.childNodes.length - 1
 }, 0)
 
 function openForm() {
@@ -119,7 +119,7 @@ function createTask() {
 
   newItem_Div.classList.add('task-div')
   newItem_ID.classList.add('task-id')
-  
+
   if (select_color.value == 1) {
     newItem_span.innerText = color_task[0]
   } else if (select_color.value == 2) {
