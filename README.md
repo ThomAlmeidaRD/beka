@@ -1,4 +1,4 @@
-# Beka - App Web de Lista de Tarefas
+# Beka - App Web de Lista de Tarefas 📚
 
 ![Imagens do Projeto Funcionando](./shots.png)
 
