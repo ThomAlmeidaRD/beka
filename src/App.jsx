@@ -14,6 +14,7 @@ db.version(1).stores({
 
 var body = document.querySelector('body')
 
+
 body.onload = function () {
 
   db.tarefas.toArray().then(function (tarefas) {
@@ -22,6 +23,7 @@ body.onload = function () {
 
     for (var i = 0; i < tarefas.length; i++) {
 
+      var msgLI = document.querySelector('#li-100')
       var newItem = document.createElement('li')
       var newItem_Div = document.createElement('div')
       var newItem_Title = document.createElement('h3')
@@ -60,12 +62,14 @@ body.onload = function () {
 
         if (ul.childNodes.length == 1) {
           msg.style.display = 'flex'
+          msg.innerText = 'Cabo ? 🥳'
         }
 
       })
 
       if (ul.childNodes.length > 1) {
         msg.style.display = 'none'
+        msgLI.style.display = 'none'
       }
 
     }
@@ -100,6 +104,7 @@ function close() {
 function createTask() {
 
   var msg = document.querySelector('#msg')
+  var msgLI = document.querySelector('#li-100')
   var form = document.querySelector('#form-container')
   var txtTarefa = document.querySelector('#txtTitle')
   var select_color = document.querySelector('select')
@@ -177,12 +182,15 @@ function createTask() {
     ul.removeChild(thisLI)
 
     if (ul.childNodes.length == 1) {
+      msgLI.style.display = 'block'
       msg.style.display = 'flex'
+      msg.innerText = 'Cabo ? 🥳'
     }
 
   })
 
   msg.style.display = 'none'
+  msgLI.style.display = 'none'
   txtTarefa.value = ''
   form.style.display = 'none'
 
