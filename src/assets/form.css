@@ -28,8 +28,8 @@ form input[type="text"] {
     margin: 20px 0px;
     font-size: 14px;
     background-color: transparent;
-    border: none;
-    border-bottom: 1px solid #fff;
+    border: 1px solid #fff;
+    border-radius: 5px;
     color: #fff;
     outline: none;
 }

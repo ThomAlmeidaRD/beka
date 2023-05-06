@@ -4,11 +4,12 @@ import Navbar from "./components/navbar"
 import Task from './components/task'
 
 var color_task = ['🤙🏼', '⏱', '🔥', '💖']
+var body = document.querySelector('body')
 
 setInterval(function () {
   var count = document.querySelector('#count')
   var ul = document.querySelector('ul')
-  count.innerText = ul.childNodes.length - 1
+  //count.innerText = ul.childNodes.length - 1
 }, 0)
 
 function openForm() {
@@ -71,9 +72,19 @@ function createTask() {
     }
   })
 
+  var json_Task = {
+    title: txtTarefa.value,
+    emoji: select_color.value
+  }
+
+
   msg.style.display = 'none'
   txtTarefa.value = ''
   form.style.display = 'none'
+
+
+  localStorage.setItem((localStorage.length), JSON.stringify(json_Task))
+
 
 }
 
