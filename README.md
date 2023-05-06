@@ -1,6 +1,6 @@
 # Beka - App Web de Lista de Tarefas
 
-
+![Imagens do Projeto Funcionando](./shots.png)
 
 Este é o repositório do projeto Beka, um aplicativo web de lista de tarefas desenvolvido em ReactJS. Ele foi criado para ajudar minha namorada Rebeka a gerenciar suas tarefas da faculdade e do trabalho.
 
