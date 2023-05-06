@@ -39,6 +39,7 @@ function createTask() {
   var newItem_Title = document.createElement('h3')
   var newItem_Button = document.createElement('ion-icon')
   var newItem_span = document.createElement('b')
+  var newItem_key = document.createElement('p')
 
   newItem_Div.classList.add('task-div')
   if (select_color.value == 1) {
@@ -57,24 +58,19 @@ function createTask() {
 
   newItem_Div.appendChild(newItem_span)
   newItem_Div.appendChild(newItem_Title)
+  newItem_Div.appendChild(newItem_key)
   newItem_Div.appendChild(newItem_Button)
   newItem.appendChild(newItem_Div)
 
+
   newItem_Title.innerText = txtTarefa.value
+  newItem_key.innerText = localStorage.key(localStorage.length + 1)
   ul.appendChild(newItem)
-
-
-  newItem_Button.addEventListener('click', function () {
-    ul.removeChild(newItem)
-
-    if (ul.childNodes.length == 1) {
-      msg.style.display = 'flex'
-    }
-  })
 
   var json_Task = {
     title: txtTarefa.value,
-    emoji: select_color.value
+    emoji: select_color.value,
+    visible: true,
   }
 
 
@@ -84,7 +80,7 @@ function createTask() {
 
 
   localStorage.setItem((localStorage.length), JSON.stringify(json_Task))
-
+  window.location.reload()
 
 }
 
