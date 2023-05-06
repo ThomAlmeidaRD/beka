@@ -7,7 +7,7 @@ function Navbar() {
             <nav>
                 <img src={profile} alt="" />
                <section>
-               <b>@Beka</b>
+               <b>.beka</b>
                <p id="curso">Publicidade</p>
                </section>
             </nav>
